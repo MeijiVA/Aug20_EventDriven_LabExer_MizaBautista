@@ -25,6 +25,7 @@ namespace Aug20_EventDriven_LabExer_MizaBautista
         //STEP 5
         private CashierClass cashier;
 
+
         //STEP 4
         private void btnCashier_Click(object sender, EventArgs e)
         {

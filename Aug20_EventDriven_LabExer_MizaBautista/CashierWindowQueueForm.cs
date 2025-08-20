@@ -16,7 +16,10 @@ namespace Aug20_EventDriven_LabExer_MizaBautista
     {
         public CashierWindowQueue()
         {
+            //STEP 13
             InitializeComponent();
+            timerRefresh.Interval = (3 * 1000);//3seconds
+            timerRefresh.Enabled = true;
         }
 
         //STEP 9
@@ -35,6 +38,17 @@ namespace Aug20_EventDriven_LabExer_MizaBautista
             }
         }
 
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            //STEP 12
+            CashierClass.CashierQueue.Dequeue();
+            DisplayCashierQueue(CashierClass.CashierQueue);
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DisplayCashierQueue(CashierClass.CashierQueue);
+        }
     }
 }
