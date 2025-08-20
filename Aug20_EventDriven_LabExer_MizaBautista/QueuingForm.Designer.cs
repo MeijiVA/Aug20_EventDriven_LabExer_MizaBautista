@@ -36,20 +36,21 @@
             // 
             // btnCashier
             // 
+            this.btnCashier.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnCashier.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCashier.Location = new System.Drawing.Point(12, 54);
             this.btnCashier.Name = "btnCashier";
             this.btnCashier.Size = new System.Drawing.Size(120, 83);
             this.btnCashier.TabIndex = 0;
             this.btnCashier.Text = "Cashier";
-            this.btnCashier.UseVisualStyleBackColor = true;
+            this.btnCashier.UseVisualStyleBackColor = false;
             this.btnCashier.Click += new System.EventHandler(this.btnCashier_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(224, 34);
+            this.label1.Location = new System.Drawing.Point(214, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 20);
             this.label1.TabIndex = 1;
@@ -70,22 +71,24 @@
             // 
             this.lblQueue.AutoSize = true;
             this.lblQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQueue.Location = new System.Drawing.Point(149, 73);
+            this.lblQueue.Location = new System.Drawing.Point(177, 68);
             this.lblQueue.Name = "lblQueue";
-            this.lblQueue.Size = new System.Drawing.Size(85, 55);
+            this.lblQueue.Size = new System.Drawing.Size(202, 55);
             this.lblQueue.TabIndex = 3;
-            this.lblQueue.Text = "P -";
-            this.lblQueue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblQueue.Text = "N O N E";
+            this.lblQueue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // QueuingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(421, 203);
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.ClientSize = new System.Drawing.Size(421, 175);
             this.Controls.Add(this.lblQueue);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCashier);
+            this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.Name = "QueuingForm";
             this.Text = "QueuingForm";
             this.Load += new System.EventHandler(this.QueuingForm_Load);
