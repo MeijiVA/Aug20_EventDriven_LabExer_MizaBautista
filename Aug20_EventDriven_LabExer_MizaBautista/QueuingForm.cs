@@ -29,9 +29,15 @@ namespace Aug20_EventDriven_LabExer_MizaBautista
         private void btnCashier_Click(object sender, EventArgs e)
         {
             //STEP 7
-            lblQueue.Text = cashier.CashierGeneratedNumber("p - ");
+            lblQueue.Text = cashier.CashierGeneratedNumber("P - ");
             CashierClass.getNumberInQueue = lblQueue.Text;
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
+        }
+
+        private void QueuingForm_Load(object sender, EventArgs e)
+        {
+            CashierWindowQueue cwq = new CashierWindowQueue();
+            cwq.Show();
         }
     }
 }
