@@ -20,11 +20,14 @@ namespace Aug20_EventDriven_LabExer_MizaBautista
             InitializeComponent();
             //STEP 6
             cashier = new CashierClass();
+            serve = new ServingWindowForm();
+            cwq = new CashierWindowQueue();
         }
 
         //STEP 5
         private CashierClass cashier;
-
+        CashierWindowQueue cwq;
+        ServingWindowForm serve;
 
         //STEP 4
         private void btnCashier_Click(object sender, EventArgs e)
@@ -33,12 +36,14 @@ namespace Aug20_EventDriven_LabExer_MizaBautista
             lblQueue.Text = cashier.CashierGeneratedNumber("P - ");
             CashierClass.getNumberInQueue = lblQueue.Text;
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
+            serve.TimerRefresh.Enabled = true;
         }
 
         private void QueuingForm_Load(object sender, EventArgs e)
         {
             CashierWindowQueue cwq = new CashierWindowQueue();
             cwq.Show();
+            serve.Show();
         }
     }
 }

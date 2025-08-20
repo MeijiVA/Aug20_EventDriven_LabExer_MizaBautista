@@ -91,6 +91,6 @@
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.ListView listCashierQueue;
-        private System.Windows.Forms.Timer timerRefresh;
+        public System.Windows.Forms.Timer timerRefresh;
     }
 }
