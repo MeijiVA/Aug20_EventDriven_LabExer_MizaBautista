@@ -16,7 +16,7 @@ namespace Aug20_EventDriven_LabExer_MizaBautista
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new QueuingForm());
         }
     }
 }
