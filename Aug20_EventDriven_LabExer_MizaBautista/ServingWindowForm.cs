@@ -26,7 +26,7 @@ namespace Aug20_EventDriven_LabExer_MizaBautista
 
         private void TimerRefresh_Tick(object sender, EventArgs e)
         {
-            CashierClass.CashierQueue.Peek();
+            lblServe.Text = CashierClass.CashierQueue.Peek().ToString();
         }
     }
 }
